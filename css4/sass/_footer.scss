@@ -1,0 +1,17 @@
+.footer {
+  @include perfect-center;
+  background-image: url(../images/bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  height: 300px;
+
+  h1 {
+    text-align: center;
+    color: white;
+
+    &::selection {
+      color: black;
+      background-color: white;
+    }
+  }
+}
