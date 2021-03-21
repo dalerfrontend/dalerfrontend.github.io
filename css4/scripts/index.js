@@ -1,1 +1,1 @@
-new Splide( '.splide' ).mount();
+
