@@ -1,22 +1,93 @@
-@import "../initial/reset";
 @import "../initial/variables";
 @import "../initial/mixins";
 
 .main {
   & {
-    @include border(1px);
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
   }
+  &__title {
+   padding: 0;
+   line-height: 1;
+   margin-top: 50px;
+  }
+  &__sub-title {
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.582);
+    font-size: 25px;
+  }
+  &__line {
+    height: 1px;
+    background-color: black;
+    margin: 10px 0 50px;
+  }
+}
+
+%project-btn {
+  display: inline-flex;
+  cursor: pointer;
+  font-size: 17px;
+  margin: 25px 10px 0;
 }
 
 .projects {
   & {
-    @include border(1px, black);
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1000px;
   }
   &__project {
-    @include border(1px, blue);
-    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  &__project-img {
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.397);
+    width: 50%;
+    transition: transform .1s linear;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__project-text {
+    width: 50%;
+    padding-left: 50px;
+  }
+  &__project-title {
+    font-weight: bold;
+  }
+  &__project-info {
+    color: rgba(0,0,0,.65);
+    margin-top: 10px;
+  }
+  &__project-btn-view {
+    @extend %project-btn;
+    margin-left: 0;
+    align-items: center;
+    background-color: #F37832;
+    color: white;
+    border-radius: 25px;
+    padding: 3px;
+    padding-left: 15px;
+  }
+  &__project-btn-github {
+    @extend %project-btn;
+    align-items: center;
+    background-color: #01AFD1;
+    color: white;
+    border-radius: 25px;
+    padding: 3px;
+    padding-left: 15px;
+  }
+  &__project-btn-arrow {
+    @include center;
+    margin-left: 10px;
+    color: white;
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.295);
   }
 }

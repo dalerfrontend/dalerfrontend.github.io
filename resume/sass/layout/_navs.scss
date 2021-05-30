@@ -1,21 +1,20 @@
 .header-nav {
   & {
-    background-color: white;
     display: flex;
     justify-content: center;
-    margin-top: 70px;
     padding: 20px 0;
-    position: sticky;
-    top: 0;
   }
   &__link {
     margin: 0 15px;
-    font-size: 20px;
+    font-size: 18px;
 
-    &_active {
-      a {
-        color: grey;
-      }
+    a {
+      color: white;
+    }
+  }
+  &__link--active {
+    a {
+      color: #9273cd;
     }
   }
 }

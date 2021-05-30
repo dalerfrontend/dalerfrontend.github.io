@@ -1,0 +1,37 @@
+.footer {
+  & {
+    @include border();
+    background-color: #171717;
+    margin-top: 100px;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+  }
+  &__column {
+    margin: 0 70px;
+  }
+  &__column-title {
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  &__column-items {
+    display: flex;
+    flex-direction: column;
+  }
+  &__column-item {
+    color: hsla(0, 0%, 100%, .5);
+    line-height: 1;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: color .2s linear;
+
+    &:hover {
+      color: white;
+    }
+  }
+  .fab {
+    font-size: 30px;
+    vertical-align: middle;
+  }
+}

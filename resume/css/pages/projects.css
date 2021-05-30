@@ -1,40 +1,87 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html {
-  font-size: 16px;
-  font-family: sans-serif;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-body {
-  height: 1000px;
-}
-
-ul {
-  list-style-type: none;
-}
-
 .main {
-  border: 1px solid black;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
+}
+.main__title {
+  padding: 0;
+  line-height: 1;
+  margin-top: 50px;
+}
+.main__sub-title {
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.582);
+  font-size: 25px;
+}
+.main__line {
+  height: 1px;
+  background-color: black;
+  margin: 10px 0 50px;
+}
+
+.projects__project-btn-github, .projects__project-btn-view {
+  display: inline-flex;
+  cursor: pointer;
+  font-size: 17px;
+  margin: 25px 10px 0;
 }
 
 .projects {
-  border: 1px solid black;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1000px;
 }
 .projects__project {
-  border: 1px solid blue;
-  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.projects__project-img {
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.397);
+  width: 50%;
+  transition: transform 0.1s linear;
+}
+.projects__project-img:hover {
+  transform: scale(1.1);
+}
+.projects__project-text {
+  width: 50%;
+  padding-left: 50px;
+}
+.projects__project-title {
+  font-weight: bold;
+}
+.projects__project-info {
+  color: rgba(0, 0, 0, 0.65);
+  margin-top: 10px;
+}
+.projects__project-btn-view {
+  margin-left: 0;
+  align-items: center;
+  background-color: #F37832;
+  color: white;
+  border-radius: 25px;
+  padding: 3px;
+  padding-left: 15px;
+}
+.projects__project-btn-github {
+  align-items: center;
+  background-color: #01AFD1;
+  color: white;
+  border-radius: 25px;
+  padding: 3px;
+  padding-left: 15px;
+}
+.projects__project-btn-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  color: white;
+  border-radius: 25px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.295);
 }
 
 /*# sourceMappingURL=projects.css.map */
