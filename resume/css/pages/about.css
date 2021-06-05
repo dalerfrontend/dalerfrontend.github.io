@@ -22,8 +22,10 @@
   height: 200px;
   border-radius: 50%;
   position: relative;
+  z-index: 1;
 }
 .about__avatar {
+  z-index: 2;
   height: 100%;
   position: absolute;
   bottom: 10px;
@@ -60,14 +62,6 @@
 .skills {
   margin-top: 100px;
 }
-.skills__title {
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.397);
-}
-.skills__line {
-  background-color: black;
-  height: 1px;
-  margin: 10px 0 30px;
-}
 .skills__list {
   display: grid;
   grid-template-columns: auto auto;
@@ -95,6 +89,7 @@
   right: 0;
   width: 8px;
   background-color: black;
+  z-index: 1;
 }
 .skills__skill:nth-child(1)::after {
   background-color: #3ec9f3;
@@ -108,6 +103,12 @@
 .skills__skill:nth-child(4)::after {
   background-color: #0f82a5;
 }
+.skills__skill:nth-child(5)::after {
+  background-color: #a606ce;
+}
+.skills__skill:nth-child(6)::after {
+  background-color: #d30f0f;
+}
 .skills__skill-img {
   height: 60px;
 }
@@ -119,25 +120,23 @@
 .languages {
   margin-top: 100px;
 }
-.languages__title {
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.397);
-}
-.languages__line {
-  height: 1px;
-  background-color: black;
-  margin: 10px 0 50px;
-}
 .languages__table {
+  border: none;
   padding: 10px;
   border-collapse: collapse;
 }
+.languages__row:nth-child(1) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.452);
+}
 .languages__cell {
-  border: 1px solid rgba(0, 0, 0, 0.452);
   min-width: 250px;
-  padding: 10px;
-  font-size: 20px;
+  padding: 20px 10px;
+  font-size: 24px;
   font-weight: bold;
   line-height: 1;
+}
+.languages__cell:nth-child(1) {
+  border-right: 1px solid rgba(0, 0, 0, 0.452);
 }
 .languages__cell-sub {
   font-size: 16px;
@@ -164,11 +163,6 @@
 .why-choose {
   margin-top: 100px;
 }
-.why-choose__line {
-  height: 1px;
-  background-color: black;
-  margin: 10px 0 50px;
-}
 .why-choose__list {
   display: flex;
   justify-content: space-around;
@@ -190,6 +184,18 @@
 .why-choose__item-title {
   font-size: 30px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 916px) {
+  .main {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 526px) {
+  .skills__list {
+    grid-template-columns: auto;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */

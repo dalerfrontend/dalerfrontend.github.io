@@ -1,9 +1,0 @@
-@import "../initial/variables";
-@import "../initial/mixins";
-
-.main {
-  @include border(1px, black);
-  margin: 0 auto;
-  width: 80%;
-  min-height: 100px;
-}

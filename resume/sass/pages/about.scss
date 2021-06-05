@@ -28,8 +28,10 @@
     height: 200px;
     border-radius: 50%;
     position: relative;
+    z-index: 1;
   }
   &__avatar {
+    z-index: 2;
     height: 100%;
     position: absolute;
     bottom: 10px;
@@ -74,14 +76,7 @@
   & {
     margin-top: 100px;
   }
-  &__title {
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.397);
-  }
-  &__line {
-    background-color: black;
-    height: 1px;
-    margin: 10px 0 30px;
-  }
+  &__title {}
   &__list {
     display: grid;
     grid-template-columns: auto auto;
@@ -110,6 +105,7 @@
       right: 0;
       width: 8px;
       background-color: black;
+      z-index: 1;
     }
     &:nth-child(1)::after {
       background-color: rgb(62, 201, 243);
@@ -122,6 +118,12 @@
     }
     &:nth-child(4)::after {
       background-color: rgb(15, 130, 165);
+    }
+    &:nth-child(5)::after {
+      background-color: rgb(166, 6, 206);
+    }
+    &:nth-child(6)::after {
+      background-color: rgb(211, 15, 15);
     }
     &-img {
       height: 60px;
@@ -137,26 +139,30 @@
   & {
     margin-top: 100px;
   }
-  &__title {
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.397);
-  }
-  &__line {
-    height: 1px;
-    background-color: black;
-    margin: 10px 0 50px;
-  }
+  &__title {}
   &__table {
+    border: none;
     padding: 10px;
     border-collapse: collapse;
   }
-  &__row {}
+  &__row {
+    & {}
+    &:nth-child(1) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.452);
+    }
+  }
   &__cell {
-    @include border(1px, rgba(0, 0, 0, 0.452));
-    min-width: 250px;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1;
+    & {
+      // @include border(1px, rgba(0, 0, 0, 0.452));
+      min-width: 250px;
+      padding: 20px 10px;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1;
+    }
+    &:nth-child(1) {
+      border-right: 1px solid rgba(0, 0, 0, 0.452);
+    }
   }
   &__cell-sub {
     font-size: 16px;
@@ -190,11 +196,6 @@
   &__title {
 
   }
-  &__line {
-    height: 1px;
-    background-color: black;
-    margin: 10px 0 50px;
-  }
   &__list {
     display: flex;
     justify-content: space-around;
@@ -216,5 +217,23 @@
   &__item-title {
     font-size: 30px;
     font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 916px) {
+  .main {
+    & {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 526px) {
+  .skills {
+    & {}
+    &__list {
+      grid-template-columns: auto;
+    }
   }
 }

@@ -1,0 +1,48 @@
+.main {
+  margin: 0 auto;
+  width: 60%;
+  min-height: 100px;
+  min-height: 700px;
+}
+.main__title {
+  margin-top: 40px;
+  line-height: 1;
+}
+.main__line {
+  height: 1px;
+  background-color: black;
+  margin: 20px 0 50px;
+}
+.main__subtitle {
+  color: rgba(0, 0, 0, 0.582);
+  line-height: 1;
+  font-size: 20px;
+}
+
+.ques {
+  margin-top: 50px;
+}
+.ques__que {
+  cursor: pointer;
+  padding: 20px;
+  box-shadow: 0 0 1px black;
+}
+.ques__que-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ques__que-title {
+  color: #161414;
+}
+.ques__que-answer {
+  margin-top: 20px;
+}
+.ques__que--closed .ques__que-answer {
+  display: none;
+}
+.ques .fa-sort-down {
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=questions.css.map */

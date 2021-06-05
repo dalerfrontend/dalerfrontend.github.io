@@ -1,0 +1,57 @@
+@import "../initial/variables";
+@import "../initial/mixins";
+
+.main {
+  & {
+    margin: 0 auto;
+    width: 60%;
+    min-height: 100px;
+    min-height: 700px;
+  }
+  &__title {
+    margin-top: 40px;
+    line-height: 1;
+  }
+  &__line {
+    height: 1px;
+    background-color: black;
+    margin: 20px 0 50px;
+  }
+  &__subtitle {
+    color: rgba(0, 0, 0, 0.582);
+    line-height: 1;
+    font-size: 20px;
+  }
+}
+
+.ques {
+  & {
+    margin-top: 50px;
+  }
+  &__que {
+    & {
+      cursor: pointer;
+      padding: 20px;
+      box-shadow: 0 0 1px black;
+    }
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-title {
+      color: rgb(22, 20, 20);
+    }
+    &-answer {
+      & {
+        margin-top: 20px;
+      }
+    }
+    &--closed .ques__que-answer {
+      display: none;
+    }
+  }
+  .fa-sort-down {
+    font-size: 25px;
+  }
+}
