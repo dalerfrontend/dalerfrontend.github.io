@@ -11,7 +11,7 @@
 .about {
   & {
     // background-color: rgb(255, 255, 255);
-    background-color: #f3f3f37e;
+    background-color: #bec0ba7e;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,8 +68,8 @@
     }
     &__img-container {
       flex-basis: initial;
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
     }
     &__avatar {
       position: static;
@@ -109,7 +109,7 @@
   }
   &__skill {
     & {
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.205);
+      box-shadow: 0 0 50px rgba(134, 131, 131, 0.205);
       position: relative;
       padding: 10px;
       padding-right: 20px;
@@ -154,6 +154,7 @@
       height: 60px;
     }
     &-title {
+      user-select: none;
       font-size: 30px;
       font-weight: bold;
     }
@@ -163,7 +164,7 @@
 @media screen and (max-width: 526px) {
   .skills {
     & {
-      margin-top: 30px;
+      margin-top: 50px;
     }
     &__list {
       grid-template-columns: auto;
@@ -171,7 +172,9 @@
     }
     &__skill {
       & {
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.075)
+        @include border(1px, rgba(0, 0, 0, 0.452));
+        box-shadow: none;
+        // box-shadow: 0 0 30px rgba(0, 0, 0, 0.075)
       }
       &-img {
         height: 40px;
@@ -215,7 +218,7 @@
   }
   &__cell-sub {
     font-size: 16px;
-    color: rgba(0, 0, 0, 0.562);
+    color: rgba(0, 0, 0, 0.384);
   }
   &__lang-bar {
     width: 100%;
@@ -225,7 +228,7 @@
 
     &-inner {
       height: 100%;
-      background-color: #714faf;
+      background-color: #7e62b1;
       border-radius: 35px;
 
       &--fluent {
@@ -241,12 +244,13 @@
 @media screen and (max-width: 704px) {
   .languages {
     & {
-      margin-top: 20px;
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
     &__cell {
       font-size: 16px;
     }
-    &__sub {
+    &__cell-sub {
       font-size: 13px;
     }
     &__table {

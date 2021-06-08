@@ -4,7 +4,7 @@
 }
 
 .about {
-  background-color: #f3f3f37e;
+  background-color: #bec0ba7e;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,8 +57,8 @@
   }
   .about__img-container {
     flex-basis: initial;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .about__avatar {
     position: static;
@@ -88,7 +88,7 @@
   grid-gap: 20px;
 }
 .skills__skill {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.205);
+  box-shadow: 0 0 50px rgba(134, 131, 131, 0.205);
   position: relative;
   padding: 10px;
   padding-right: 20px;
@@ -133,20 +133,22 @@
   height: 60px;
 }
 .skills__skill-title {
+  user-select: none;
   font-size: 30px;
   font-weight: bold;
 }
 
 @media screen and (max-width: 526px) {
   .skills {
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .skills__list {
     grid-template-columns: auto;
     grid-gap: 5px;
   }
   .skills__skill {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.075);
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    box-shadow: none;
   }
   .skills__skill-img {
     height: 40px;
@@ -179,7 +181,7 @@
 }
 .languages__cell-sub {
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.562);
+  color: rgba(0, 0, 0, 0.384);
 }
 .languages__lang-bar {
   width: 100%;
@@ -189,7 +191,7 @@
 }
 .languages__lang-bar-inner {
   height: 100%;
-  background-color: #714faf;
+  background-color: #7e62b1;
   border-radius: 35px;
 }
 .languages__lang-bar-inner--fluent {
@@ -201,12 +203,13 @@
 
 @media screen and (max-width: 704px) {
   .languages {
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .languages__cell {
     font-size: 16px;
   }
-  .languages__sub {
+  .languages__cell-sub {
     font-size: 13px;
   }
   .languages__table {
