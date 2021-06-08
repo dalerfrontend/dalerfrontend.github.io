@@ -23,10 +23,10 @@
   }
   &__que {
     & {
+      border: 3px solid rgb(120, 0, 136);
       cursor: pointer;
       padding: 20px;
       margin: 10px 0;
-      box-shadow: 0 0 1px black;
     }
     &-header {
       display: flex;
@@ -35,14 +35,22 @@
     }
     &-title {
       color: rgb(22, 20, 20);
+      font-size: 30px;
+      font-weight: bold;
     }
     &-answer {
       & {
         margin-top: 20px;
       }
     }
-    &--closed .ques__que-answer {
-      display: none;
+    &--closed {
+      & {
+        box-shadow: 0 0 1px black;
+        border-color: transparent;
+      }
+      .ques__que-answer {
+        display: none;
+      }
     }
   }
   .fa-sort-down {
@@ -61,7 +69,12 @@
   .ques {
     & {}
     &__que {
-      padding: 10px;
+      & {
+        padding: 10px;
+      }
+      &-title {
+        font-size: 18px;
+      }
     }
   }
 }

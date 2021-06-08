@@ -16,10 +16,10 @@
   margin-top: 50px;
 }
 .ques__que {
+  border: 3px solid #780088;
   cursor: pointer;
   padding: 20px;
   margin: 10px 0;
-  box-shadow: 0 0 1px black;
 }
 .ques__que-header {
   display: flex;
@@ -28,9 +28,15 @@
 }
 .ques__que-title {
   color: #161414;
+  font-size: 30px;
+  font-weight: bold;
 }
 .ques__que-answer {
   margin-top: 20px;
+}
+.ques__que--closed {
+  box-shadow: 0 0 1px black;
+  border-color: transparent;
 }
 .ques__que--closed .ques__que-answer {
   display: none;
@@ -48,6 +54,9 @@
 @media screen and (max-width: 489px) {
   .ques__que {
     padding: 10px;
+  }
+  .ques__que-title {
+    font-size: 18px;
   }
 }
 
