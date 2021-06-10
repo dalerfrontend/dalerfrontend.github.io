@@ -33,6 +33,7 @@
     z-index: 1;
   }
   &__avatar {
+    @include border(1px, grey);
     border-radius: 50%;
     z-index: 2;
     height: 100%;
