@@ -4,7 +4,7 @@
 }
 
 .about {
-  background-color: #bec0ba7e;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,6 +25,7 @@
   z-index: 1;
 }
 .about__avatar {
+  border-radius: 50%;
   z-index: 2;
   height: 100%;
   position: absolute;
@@ -88,7 +89,7 @@
   grid-gap: 20px;
 }
 .skills__skill {
-  box-shadow: 0 0 50px rgba(134, 131, 131, 0.205);
+  background-color: white;
   position: relative;
   padding: 10px;
   padding-right: 20px;
@@ -147,7 +148,6 @@
     grid-gap: 5px;
   }
   .skills__skill {
-    border: 1px solid rgba(0, 0, 0, 0.452);
     box-shadow: none;
   }
   .skills__skill-img {

@@ -17,6 +17,7 @@
 }
 .ques__que {
   border: 3px solid #780088;
+  background-color: white;
   cursor: pointer;
   padding: 20px;
   margin: 10px 0;

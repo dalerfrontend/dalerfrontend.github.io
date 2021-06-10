@@ -11,7 +11,7 @@
 .about {
   & {
     // background-color: rgb(255, 255, 255);
-    background-color: #bec0ba7e;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +33,7 @@
     z-index: 1;
   }
   &__avatar {
+    border-radius: 50%;
     z-index: 2;
     height: 100%;
     position: absolute;
@@ -109,7 +110,8 @@
   }
   &__skill {
     & {
-      box-shadow: 0 0 50px rgba(134, 131, 131, 0.205);
+      background-color: white;
+      // box-shadow: 0 0 50px rgba(134, 131, 131, 0.205);
       position: relative;
       padding: 10px;
       padding-right: 20px;
@@ -172,7 +174,7 @@
     }
     &__skill {
       & {
-        @include border(1px, rgba(0, 0, 0, 0.452));
+        // @include border(1px, rgba(0, 0, 0, 0.452));
         box-shadow: none;
         // box-shadow: 0 0 30px rgba(0, 0, 0, 0.075)
       }
