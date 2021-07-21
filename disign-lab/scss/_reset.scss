@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-shadow: border-box;
+  line-height: 1em;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url();
+}
+
+
+:root {
+  --theme-orange: #FE5824;
+  --theme-dark: #141313;
+  --theme-mute: #525252;
+}
+
+html {
+  font-family: Poppins, sans-serif;
+  color: white;
+  background-color: #09090A;
+}
+
+body {
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: 24px;
+  color: white;
+}
+

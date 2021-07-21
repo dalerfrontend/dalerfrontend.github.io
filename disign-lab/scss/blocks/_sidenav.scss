@@ -1,0 +1,59 @@
+.sidenav {
+  & {
+    padding: 15px 0 0 0;
+    background-color: var(--theme-dark);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    z-index: 999;
+    animation: {
+      duration: .2s;
+      iming-function: linear;
+      fill-mode: forwards;
+    }
+  }
+  &__close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  &__anim-open {
+    animation-name: slide-right;
+  }
+  &__anim-close {
+    animation-name: slide-left;
+  }
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 48px;
+    height: 57px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    right: 0;
+  }
+  to {
+    right: 100%;
+  }
+}

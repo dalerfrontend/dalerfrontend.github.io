@@ -1,0 +1,59 @@
+.content {
+  max-width: calc(1223px + 16px);
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.button {
+  color: white;
+  background-color: var(--theme-orange);
+  text-transform: uppercase;
+  width: 184px;
+  height: 55px;
+  border-radius: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 58px;
+}
+
+.steps {
+  & {
+    display: flex;
+  }
+  &__step {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--theme-mute);
+    margin-left: 8px;
+  }
+  &__step:nth-child(1) {
+    margin-left: 0;
+    background-color: var(--theme-orange);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .button {
+    & {
+      width: 160px;
+      height: 48px;
+      font-size: 14px;
+    }
+  }
+  .title {
+    & {
+      font-size: 27px;
+      line-height: 31px;
+    }
+  }
+}
