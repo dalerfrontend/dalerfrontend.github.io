@@ -1,6 +1,6 @@
 .sidenav {
   & {
-    padding: 15px 0 0 0;
+    padding: 40px 0 0 0;
     background-color: var(--theme-dark);
     position: fixed;
     width: 100%;
@@ -16,8 +16,9 @@
   }
   &__close-icon {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
+    font-size: 40px;
   }
   &__anim-open {
     animation-name: slide-right;

@@ -29,9 +29,8 @@
   &__img-container {
     position: relative;
     margin-right: 32px;
-    width: 462px;
-    height: 488px;
-    // border: 1px solid blue;
+    // width: 462px;
+    // height: 488px;
   }
   &__img-1 {
     position: relative;
@@ -39,6 +38,7 @@
     width: 100%;
   }
   &__img-2 {
+    height: 90%;
     position: absolute;
     top: 50%;
     right: -15px;
@@ -46,6 +46,7 @@
     z-index: 399;
   }
   &__img-3 {
+    height: 80%;
     position: absolute;
     top: 50%;
     right: -35px;
