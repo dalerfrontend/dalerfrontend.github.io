@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f709ed35.chunk.css",
-    "main.js": "/portfolio/static/js/main.c0ac78d3.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c0ac78d3.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.2d94745c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2d94745c.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.1bddf47e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.1bddf47e.js.map",
     "static/css/2.71658052.chunk.css": "/portfolio/static/css/2.71658052.chunk.css",
@@ -12,10 +12,10 @@
     "static/css/2.71658052.chunk.css.map": "/portfolio/static/css/2.71658052.chunk.css.map",
     "static/css/main.f709ed35.chunk.css.map": "/portfolio/static/css/main.f709ed35.chunk.css.map",
     "static/js/2.1f2f53c0.chunk.js.LICENSE.txt": "/portfolio/static/js/2.1f2f53c0.chunk.js.LICENSE.txt",
-    "static/media/Daler-CV.c10a9966.pdf": "/portfolio/static/media/Daler-CV.c10a9966.pdf",
+    "static/media/Daler-CV.cc6a6043.pdf": "/portfolio/static/media/Daler-CV.cc6a6043.pdf",
     "static/media/about.0896380e.jpg": "/portfolio/static/media/about.0896380e.jpg",
     "static/media/apple-store.5eaf83f0.png": "/portfolio/static/media/apple-store.5eaf83f0.png",
-    "static/media/avatar.8b272dda.png": "/portfolio/static/media/avatar.8b272dda.png",
+    "static/media/avatar.b42cf6f3.png": "/portfolio/static/media/avatar.b42cf6f3.png",
     "static/media/design-lab.98a6cb72.png": "/portfolio/static/media/design-lab.98a6cb72.png",
     "static/media/funiro.57abcc76.jpg": "/portfolio/static/media/funiro.57abcc76.jpg",
     "static/media/social-media.4cf5ebe3.jpg": "/portfolio/static/media/social-media.4cf5ebe3.jpg",
@@ -26,6 +26,6 @@
     "static/css/2.71658052.chunk.css",
     "static/js/2.1f2f53c0.chunk.js",
     "static/css/main.f709ed35.chunk.css",
-    "static/js/main.c0ac78d3.chunk.js"
+    "static/js/main.2d94745c.chunk.js"
   ]
 }
